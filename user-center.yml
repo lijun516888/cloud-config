@@ -1,18 +1,7 @@
 profiles:
     active:
     - dev
----
-server:
-  port: 8088
-spring:
-  profiles:
-    active: dev
-  application:
-    name: user-center-dev
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:6001/eureka/
+
 ---
 server:
   port: 8088
@@ -21,6 +10,20 @@ spring:
     active: test
   application:
     name: user-center-test
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6001/eureka/
+
+
+---
+server:
+  port: 8088
+spring:
+  profiles:
+    active: dev
+  application:
+    name: user-center-dev
 eureka:
   client:
     service-url:
