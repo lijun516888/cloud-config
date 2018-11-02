@@ -6,7 +6,7 @@ profiles:
 server:
   port: 8088
 spring:
-  profiles: test
+  profiles: test # 此处配置需要注意，不能配成 profiles:active:dev 只能配置成profiles:dev 要不然不生效
   application:
     name: user-center-test
 eureka:
@@ -19,7 +19,7 @@ eureka:
 server:
   port: 7077
 spring:
-  profiles: dev
+  profiles: dev  # 此处配置需要注意，不能配成 profiles:active:dev 只能配置成profiles:dev 要不然不生效
   application:
     name: user-center-dev
 eureka:
