@@ -8,7 +8,7 @@ spring:
   profiles:
     active: dev
   application:
-    name: user-center-dev
+    name: user-center
 eureka:
   client:
     service-url:
@@ -20,7 +20,7 @@ spring:
   profiles:
     active: test
   application:
-    name: user-center-test
+    name: user-center
 eureka:
   client:
     service-url:
