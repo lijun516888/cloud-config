@@ -3,7 +3,7 @@ profiles:
     - dev
 ---
 server:
-  port: 7077
+  port: 8088
 spring:
   profiles:
     active: dev
