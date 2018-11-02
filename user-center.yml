@@ -3,7 +3,7 @@ profiles:
     - dev
 ---
 server:
-  port: 8012
+  port: 7077
 spring:
   profiles:
     active: dev
@@ -15,7 +15,7 @@ eureka:
       defaultZone: http://localhost:6001/eureka/
 ---
 server:
-  port: 8013
+  port: 8088
 spring:
   profiles:
     active: test
