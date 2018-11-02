@@ -6,8 +6,7 @@ profiles:
 server:
   port: 8088
 spring:
-  profiles:
-    active: test
+  profiles: test
   application:
     name: user-center-test
 eureka:
@@ -20,8 +19,7 @@ eureka:
 server:
   port: 7077
 spring:
-  profiles:
-    active: dev
+  profiles: dev
   application:
     name: user-center-dev
 eureka:
