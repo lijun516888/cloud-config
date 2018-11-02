@@ -1,5 +1,27 @@
-logging:
-  level:
-    root: info
-    com.sword: debug
-  file: logs/${spring.application.name}.log
+profiles:
+    active:
+    - dev
+---
+server:
+  port: 8012
+spring:
+  profiles:
+    active: dev
+  application:
+    name: user-center
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6666/eureka/
+---
+server:
+  port: 8013
+spring:
+  profiles:
+    active: test
+  application:
+    name: user-center
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6666/eureka/
