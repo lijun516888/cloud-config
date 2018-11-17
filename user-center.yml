@@ -21,6 +21,11 @@ spring:
         max-idle: 8
         max-active: 8
         max-wait: -1ms
+  security:
+    oauth2:
+      resource:
+        user-info-uri: http://192.168.31.236:8888/user-me
+        prefer-token-info: false
 
 ---
 spring:
@@ -36,3 +41,8 @@ spring:
         max-idle: 8
         max-active: 8
         max-wait: -1ms
+  security:
+    oauth2:
+      resource:
+        user-info-uri: http://192.168.31.236:8888/user-me
+        prefer-token-info: false
