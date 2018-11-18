@@ -4,14 +4,32 @@ spring:
   mvc:
     servlet:
       load-on-startup: 1
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
 profiles:
     active:
     - dev
 ---
 spring:
   profiles: test # 此处配置需要注意，不能配成 profiles:active:dev 只能配置成profiles:dev 要不然不生效
+  security:
+    oauth2:
+      resource:
+        user-info-uri: http://66666:8888/user-me
+        prefer-token-info: false
 
 ---
 spring:
   profiles: dev  # 此处配置需要注意，不能配成 profiles:active:dev 只能配置成profiles:dev 要不然不生效
+  security:
+    oauth2:
+      resource:
+        user-info-uri: http://66666:8888/user-me
+        prefer-token-info: false
 
