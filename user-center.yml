@@ -10,29 +10,8 @@ profiles:
 ---
 spring:
   profiles: test # 此处配置需要注意，不能配成 profiles:active:dev 只能配置成profiles:dev 要不然不生效
-  redis:
-    host: 192.168.31.236
-    port: 6379
-    password: 12qwaszx!
-    timeout: 10s
-    lettuce:
-      pool:
-        min-idle: 0
-        max-idle: 8
-        max-active: 8
-        max-wait: -1ms
 
 ---
 spring:
   profiles: dev  # 此处配置需要注意，不能配成 profiles:active:dev 只能配置成profiles:dev 要不然不生效
-  redis:
-    host: 192.168.31.236
-    port: 6379
-    password: 12qwaszx!
-    timeout: 10s
-    lettuce:
-      pool:
-        min-idle: 0
-        max-idle: 8
-        max-active: 8
-        max-wait: -1ms
+
