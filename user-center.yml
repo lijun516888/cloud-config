@@ -1,9 +1,9 @@
 spring:
   application:
     name: user-center
-    mvc:
-      servlet:
-        load-on-startup: 1
+  mvc:
+    servlet:
+      load-on-startup: 1
 profiles:
     active:
     - dev
